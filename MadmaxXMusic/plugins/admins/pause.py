@@ -4,8 +4,8 @@ from pyrogram.types import Message
 from MadmaxXMusic import app
 from MadmaxXMusic.core.call import Madmax
 from MadmaxXMusic.utils.database import is_music_playing, music_off
-from AnonXMusic.utils.decorators import AdminRightsCheck
-from AnonXMusic.utils.inline import close_markup
+from MadmaxXMusic.utils.decorators import AdminRightsCheck
+from MadmaxXMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
 
