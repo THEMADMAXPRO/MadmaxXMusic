@@ -9,7 +9,6 @@
 <p align="center">
 <a href="https://github.com/THEMADMAXPRO/MadmaxXMusic/stargazers"><img src="https://img.shields.io/github/stars/THEMADMAXPRO/MadmaxXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" alt="Stars" /></a>
 <a href="https://github.com/THEMADMAXPRO/MadmaxXMusic/network/members"> <img src="https://img.shields.io/github/forks/THEMADMAXPRO/MadmaxXMusic?color=black&logo=github&logoColor=black&style=for-the-badge" /></a>
-<a href="https://github.com/THEMADMAXPRO/MadmaxXMusic/blob/master/LICENSE"> <img src="https://img.shields.io/badge/License-MIT-blueviolet?style=for-the-badge" alt="License" /> </a>
 <a href="https://www.python.org/"> <img src="https://img.shields.io/badge/Written%20in-Python-orange?style=for-the-badge&logo=python" alt="Python" /> </a>
 <a href="https://github.com/THEMADMAXPRO/MadmaxXMusic/commits/THEMADMAXPRO"> <img src="https://img.shields.io/github/last-commit/THEMADMAXPRO/MadmaxXMusic?color=blue&logo=github&logoColor=green&style=for-the-badge" /></a>
 </p>
