@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from MadmaxXMusic import app
 from MadmaxXMusic.core.call import Madmax
 from MadmaxXMusic.utils.database import set_loop
-from AnonXMusic.utils.decorators import AdminRightsCheck
+from MadmaxXMusic.utils.decorators import AdminRightsCheck
 from MadmaxXMusic.utils.inline import close_markup
 from config import BANNED_USERS
 
