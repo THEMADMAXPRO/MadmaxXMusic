@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from MaxmaxXMusic import YouTube, app
+from MaxmadXMusic import YouTube, app
 from MadmaxXMusic.core.call import Madmax
 from MadmaxXMusic.misc import db
 from MadmaxXMusic.utils.database import get_loop
