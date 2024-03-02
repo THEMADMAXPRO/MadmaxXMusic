@@ -59,7 +59,7 @@ async def gib_repo(client, CallbackQuery, _):
             [
                 [
                     InlineKeyboardButton(
-                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/THEMADMAXPRO/MadmaxXMusic"
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
                     ),
                 ],
                 [
@@ -130,6 +130,12 @@ async def gib_repo(client, CallbackQuery, _):
         InputMediaVideo("https://telegra.ph/file/b6b38b43c6d322f3b7e08.mp4", has_spoiler=True, caption="ᴇᴍᴍᴀ ɪ ʟᴏᴠᴇ ʏᴏᴜ 💝🥵✨"),
         reply_markup=InlineKeyboardMarkup(
             [
+                
+                [
+                    InlineKeyboardButton(
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
+                    )
+                ],
                 [
                     InlineKeyboardButton(
                         text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
