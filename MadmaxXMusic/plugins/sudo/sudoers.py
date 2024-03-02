@@ -6,7 +6,7 @@ from MadmaxXMusic.misc import SUDOERS
 from MadmaxXMusic.utils.database import add_sudo, remove_sudo
 from MadmaxXMusic.utils.decorators.language import language
 from MadmaxXMusic.utils.extraction import extract_user
-from AnonXMusic.utils.inline import close_markup
+from MadmaxXMusic.utils.inline import close_markup
 from config import BANNED_USERS, OWNER_ID
 
 
