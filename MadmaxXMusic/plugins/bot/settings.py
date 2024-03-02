@@ -54,12 +54,12 @@ async def settings_mar(client, message: Message, _):
 @languageCB
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
-     InputMediaVideo("https://telegra.ph/file/2e0d941212829173c69e8.mp4", has_spoiler=True, caption="ɢᴜʏs ᴋᴜᴄʜ ʙᴀᴀᴛ ᴀɪsᴇ ʜᴏᴛɪ ʜᴀɪ ʙᴀᴛᴀɪ ɴʜɪ ᴊᴀᴀᴛɪ\nʙᴏʜᴏᴛ ᴅᴜᴋʜ ʜᴀɪ ɢᴜʏs😂\n\nᴄʜᴀʟᴀᴊᴀ ʙʜᴏsᴅɪᴋᴇ😂"),
+     InputMediaVideo("https://telegra.ph/file/13f9147896509734c8498.mp4", caption="ᴄʜᴏᴏsᴇ ᴛʜᴇ ᴄᴀᴛᴇɢᴏʀʏ ғᴏʀ\nᴡʜɪᴄʜ ʏᴏᴜ ᴡᴀɴɴᴀ ɢᴇᴛ ʜᴇʟᴩ.\nᴀsᴋ ʏᴏᴜʀ ᴅᴏᴜʙᴛs ᴀᴛ"),
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="ᴇᴍᴍᴀ ʟᴏᴠᴇ", callback_data=f"emma_love"
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://t.me/THEMADMAXPRO/MadmaxXMusic"
                     ),
                 ],
                 [
@@ -67,7 +67,7 @@ async def gib_repo(client, CallbackQuery, _):
                         text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
                     ),
                     InlineKeyboardButton(
-                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT/3"
+                        text="ᴇᴍᴍᴀ ʟᴏᴠᴇ", callback_data=f"emma_love"
                     ),
                 ],
                 [
