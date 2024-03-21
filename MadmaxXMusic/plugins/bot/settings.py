@@ -101,7 +101,7 @@ async def support(client, CallbackQuery, _):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_ARYAN13/3"
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT/3"
                     ),
 
                     InlineKeyboardButton(
@@ -136,7 +136,7 @@ async def gib_repo(client, CallbackQuery, _):
                         text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
                     ),
                     InlineKeyboardButton(
-                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_ARYAN13/3"
+                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT/3"
                     ),
                 ],
                 [
