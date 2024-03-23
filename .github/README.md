@@ -1,3 +1,17 @@
+━━━━━━━━━━━━━━━━
+### 🌷𝐕ɪsɪᴛᴏʀs🌷
+
+<!--
+**THEMADMAXPRO/MadmaxXMusic** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+
+
+<p align="center">
+    <b>ᴠɪsɪᴛᴏʀs</b><br>
+ -->    <img align="middle" src="https://profile-counter.glitch.me/THEMADMAXPRO/count.svg" />
+</p>
+
+
+
 <h2 align="center">
     ──「 ᴍᴀᴅᴍᴀx ダ ᴍᴜsɪᴄ 」──
 </h2>
