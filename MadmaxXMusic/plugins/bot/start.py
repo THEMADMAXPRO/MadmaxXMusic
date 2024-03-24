@@ -1,5 +1,5 @@
 import time
-
+import random
 from pyrogram import filters
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -9,6 +9,7 @@ import config
 from MadmaxXMusic import app
 from MadmaxXMusic.misc import _boot_
 from MadmaxXMusic.plugins.sudo.sudoers import sudoers_list
+from MadmaxXMusic.utils import bot_sys_stats
 from MadmaxXMusic.utils.database import (
     add_served_chat,
     add_served_user,
@@ -19,7 +20,7 @@ from MadmaxXMusic.utils.database import (
 )
 from MadmaxXMusic.utils.decorators.language import LanguageStart
 from MadmaxXMusic.utils.formatters import get_readable_time
-from MadmaxXMusic.utils.inline import help_pannel, private_panel, start_panel
+from MadmaxXMusic.utils.inline import first_page, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
@@ -31,7 +32,8 @@ async def start_pm(client, message: Message, _):
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
-            keyboard = help_pannel(_)
+            keyboard = first_page(_)
+            await message.reply_sticker("CAACAgUAAxkBAAICnmX_ish1T3RSY_3ZGkUGn06l5yyOAAIlCwACpm9QVX8Bb2L6G_JtNAQ")
             return await message.reply_photo(
                 photo=config.START_IMG_URL,
                 caption=_["help_1"].format(config.SUPPORT_CHAT),
@@ -46,7 +48,7 @@ async def start_pm(client, message: Message, _):
                 )
             return
         if name[0:3] == "inf":
-            m = await message.reply_text("🔎")
+            m = await message.reply_text("**» sᴇᴀʀᴄʜɪɴɢ ʙᴀʙʏ ᴘʟᴇᴀsᴇ ᴡᴀɪᴛ ")
             query = (str(name)).replace("info_", "", 1)
             query = f"https://www.youtube.com/watch?v={query}"
             results = VideosSearch(query, limit=1)
@@ -84,6 +86,7 @@ async def start_pm(client, message: Message, _):
                 )
     else:
         out = private_panel(_)
+        await message.reply_sticker("CAACAgUAAxkBAAICnmX_ish1T3RSY_3ZGkUGn06l5yyOAAIlCwACpm9QVX8Bb2L6G_JtNAQ")
         await message.reply_photo(
             photo=config.START_IMG_URL,
             caption=_["start_2"].format(message.from_user.mention, app.mention),
