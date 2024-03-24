@@ -118,7 +118,7 @@ async def support(client, CallbackQuery, _):
         ),
     )
 
-@app.on_callback_query(filters.regex("emma_love") & ~BANNED_USERS)
+@app.on_callback_query(filters.regex("madmax_op") & ~BANNED_USERS)
 @languageCB
 async def gib_repo(client, CallbackQuery, _):
     await CallbackQuery.edit_message_media(
