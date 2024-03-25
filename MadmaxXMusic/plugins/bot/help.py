@@ -117,7 +117,7 @@ async def helper_cb(client, CallbackQuery, _):
 async def first_pagexx(client, CallbackQuery, _):
     menu_next = second_page(_)
     try:
-        await CallbackQuery.message.edit_text(_["help_1"], reply_markup=menu_next)
+        await CallbackQuery.message.edit_text(_["help_1"].format(SUPPORT_CHAT), reply_markup=menu_next)
         return
     except:
         return
@@ -127,7 +127,7 @@ async def first_pagexx(client, CallbackQuery, _):
 async def first_pagee(client, CallbackQuery, _):
     menu_next = second_page(_)
     try:
-        await CallbackQuery.message.edit_text(_["help_1"], reply_markup=menu_next)
+        await CallbackQuery.message.edit_text(_["help_1"].format(SUPPORT_CHAT), reply_markup=menu_next)
         return
     except:
         return
