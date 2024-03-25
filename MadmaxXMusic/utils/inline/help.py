@@ -40,7 +40,15 @@ def second_page(_):
 
 # Just an common button
 def help_back_markup(_):
-	upl = InlineKeyboardMarkup([[InlineKeyboardButton(text=_["BACK_BUTTON"], callback_data=f"settings_back_helper")]])
+	upl = InlineKeyboardMarkup([
+		[
+			InlineKeyboardButton(text=_["BACK_BUTTON"], callback_data=f"settings_back_helper"),
+			InlineKeyboardButton(text=
+		
+		
+		]
+	         ]
+		  )
 	return upl
 
 
