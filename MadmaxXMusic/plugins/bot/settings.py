@@ -38,6 +38,7 @@ from MadmaxXMusic.utils.inline.settings import (
 )
 from MadmaxXMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID, MUSIC_BOT_NAME, START_IMG_URL
+from strings import get_string
 
 
 @app.on_message(
@@ -161,12 +162,9 @@ async def support(client, CallbackQuery, _):
             [
                 [
                     InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
-                    ),
-                    InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
-                    )
-                ],
+                        text="ʙᴀᴄᴋ", callback_data=f"emmaopback"
+                    )  
+                 ]
             ]
         ),
     )
@@ -176,29 +174,29 @@ async def support(client, CallbackQuery, _):
 async def support(client, CallbackQuery, _):
     await message.reply_photo(
                 random.choice(EMMA_PICS),
-        caption=
+        caption=_["emma_1"],reply_markup=keyboard,
+    )
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data=f"gib_source"
                     ),
                 ],
                 [
-                    InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
-                    ),
                     InlineKeyboardButton(
                         text="ᴇᴍᴍᴀ ʟᴏᴠᴇ", callback_data=f"madmax_op"
                     ),
                 ],
                 [
                     InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
-                    ),
+                        text="ᴅᴏɴᴀᴛᴇ", callback_data=f"donate"
+                    )
+                ]
+                [
                     InlineKeyboardButton(
-                        text="ᴄʟᴏsᴇ", callback_data=f"close"
-                    ),
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    )
                 ]
             ]
         ),
