@@ -59,15 +59,10 @@ async def gib_repo(client, CallbackQuery, _):
             [
                 [
                     InlineKeyboardButton(
-                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
-                    ),
-                    InlineKeyboardButton(
                         text="ᴇᴍᴍᴀ ʟᴏᴠᴇ", callback_data=f"madmax_op"
+                    ),
+                    InlineKeyboardButton(
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
                     ),
                 ],
                 [
@@ -125,45 +120,9 @@ async def gib_repo(client, CallbackQuery, _):
         InputMediaVideo("https://telegra.ph/file/b6b38b43c6d322f3b7e08.mp4", has_spoiler=True, caption="ᴇᴍᴍᴀ ɪ ʟᴏᴠᴇ ʏᴏᴜ 💝🥵✨"),
         reply_markup=InlineKeyboardMarkup(
             [
-                
                 [
                     InlineKeyboardButton(
-                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
-                    )
-                ],
-                [
-                    InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
-                    ),
-                    InlineKeyboardButton(
-                        text="ᴅᴇᴠᴇʟᴏᴘᴇʀ", url="https://t.me/ABOUT_SASHIKANT/3"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
-                    ),
-                    InlineKeyboardButton(
-                        text="ᴄʟᴏsᴇ", callback_data=f"close"
-                    ),
-                ],
-            ]
-        ),
-    )
-
-@app.on_callback_query(filters.regex("donate") & ~BANNED_USERS)
-@languageCB
-async def support(client, CallbackQuery, _):
-    await CallbackQuery.edit_message_text(
-        text="ᴀʀᴇ ʏᴏᴜ ɪɴᴛᴇʀᴇsᴛᴇᴅ ɪɴ ʜᴇʟᴘɪɴɢ ᴍʏ ᴄʀᴇᴀᴛᴏʀ\nᴡɪᴛʜ ʜɪs ᴇғғᴏʀᴛs ᴛᴏ ᴋᴇᴇᴘ ᴍᴇ ɪɴ ᴀᴄᴛɪᴠᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ?\nɪғ ʏᴇs, ʏᴏᴜ'ʀᴇ ɪɴ ᴛʜᴇ ʀɪɢʜᴛ ᴘʟᴀᴄᴇ.\n\nᴡᴇ ᴇᴍᴘʜᴀsɪsᴇ ᴛʜᴇ ɪᴍᴘᴏʀᴛᴀɴᴄᴇ ᴏғ ɴᴇᴇᴅɪɴɢ ғᴜɴᴅs ᴛᴏ ᴋᴇᴇᴘ ᴇᴍᴍᴀ ᴍᴜsɪᴄ ᴜɴᴅᴇʀ ᴀᴄᴛɪᴠᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ.\nʏᴏᴜʀ ᴅᴏɴᴀᴛɪᴏɴs ɪɴ ᴀɴʏ ᴀᴍᴏᴜɴᴛ ᴏғ ᴍᴏɴᴇʏ ᴛᴏ ᴇᴍᴍᴀ ᴍᴜsɪᴄ sᴇʀᴠᴇʀs ᴀɴᴅ ᴏᴛʜᴇʀ ᴜᴛɪʟɪᴛɪᴇs ᴡɪʟʟ ᴀʟʟᴏᴡ ᴜs ᴛᴏ sᴜsᴛᴀɪɴ ᴛʜᴇ ʟɪғᴇsᴘᴀɴ ɪɴ ᴛʜᴇ ʟᴏɴɢ ᴛᴇʀᴍ.\nᴡᴇ ᴡɪʟʟ ᴜsᴇ ᴀʟʟ ᴏғ ᴛʜᴇ ᴅᴏɴᴀᴛɪᴏɴs ᴛᴏ ᴄᴏᴠᴇʀ ғᴜᴛᴜʀᴇ ᴇxᴘᴇɴsᴇs ᴀɴᴅ ᴜᴘɢʀᴀᴅᴇs ᴏғ ᴛʜᴇ sᴇʀᴠᴇʀs ᴄᴏsᴛs.\nɪғ ʏᴏᴜ'ᴠᴇ ɢᴏᴛ sᴘᴀʀᴇ ᴍᴏɴᴇʏ ᴛᴏ ʜᴇʟᴘ ᴜs ɪɴ ᴛʜɪs ᴇғғᴏʀᴛ, ᴋɪɴᴅʟʏ ᴅᴏ sᴏ ᴀɴᴅ ʏᴏᴜʀ ᴅᴏɴᴀᴛɪᴏɴs ᴄᴀɴ ᴀʟsᴏ ᴍᴏᴛɪᴠᴀᴛᴇ ᴜs ᴋᴇᴇᴘ ʙʀɪɴɢ ᴏɴ ɴᴇᴡ ғᴇᴀᴛᴜʀᴇs.\n\nɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴅᴏɴᴀᴛᴇ ᴘʟᴇᴀsᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍʏ ᴏᴡɴᴇʀ - <a href=\"https://t.me/SASHIKANT_XD\">ᴍᴀᴅᴍᴀx💝</a>.\n\nʏᴏᴜ ᴄᴀɴ ʜᴇʟᴘ ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴘᴍᴇɴᴛ ᴡɪᴛʜ ᴅᴏɴᴀᴛɪᴏɴs",
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
-                    ),
-                    InlineKeyboardButton(
-                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
+                        text="ʙᴀᴄᴋ", callback_data=f"gib_source"
                     )
                 ],
             ]
