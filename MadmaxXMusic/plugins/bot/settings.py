@@ -27,7 +27,6 @@ from MadmaxXMusic.utils.database import (
     skip_off,
     skip_on,
 )
-from MadmaxXMusic.madmax import EMMA_PICS
 from MadmaxXMusic.utils.decorators.admins import ActualAdminCB
 from MadmaxXMusic.utils.decorators.language import language, languageCB
 from MadmaxXMusic.utils.inline.settings import (
@@ -38,7 +37,6 @@ from MadmaxXMusic.utils.inline.settings import (
 )
 from MadmaxXMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID, MUSIC_BOT_NAME, START_IMG_URL
-from strings import get_string
 
 
 @app.on_message(
@@ -162,42 +160,12 @@ async def support(client, CallbackQuery, _):
             [
                 [
                     InlineKeyboardButton(
-                        text="ʙᴀᴄᴋ", callback_data=f"emmaopback"
-                    )  
-                 ]
-            ]
-        ),
-    )
-
-@app.on_callback_query(filters.regex("emmaopback") & ~BANNED_USERS)
-@languageCB
-async def support(client, CallbackQuery, _):
-    await message.reply_photo(
-                random.choice(EMMA_PICS),
-        caption=_["emma_1"],reply_markup=keyboard,
-    )
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                    InlineKeyboardButton(
-                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", callback_data=f"gib_source"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        text="ᴇᴍᴍᴀ ʟᴏᴠᴇ", callback_data=f"madmax_op"
-                    ),
-                ],
-                [
-                    InlineKeyboardButton(
-                        text="ᴅᴏɴᴀᴛᴇ", callback_data=f"donate"
-                    )
-                ]
-                [
-                    InlineKeyboardButton(
                         text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    ),
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
                     )
-                ]
+                ],
             ]
         ),
     )
@@ -547,3 +515,4 @@ async def vote_change(client, CallbackQuery, _):
         )
     except MessageNotModified:
         return
+    
