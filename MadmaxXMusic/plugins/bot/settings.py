@@ -27,6 +27,7 @@ from MadmaxXMusic.utils.database import (
     skip_off,
     skip_on,
 )
+from MadmaxXMusic.madmax import EMMA_PICS
 from MadmaxXMusic.utils.decorators.admins import ActualAdminCB
 from MadmaxXMusic.utils.decorators.language import language, languageCB
 from MadmaxXMusic.utils.inline.settings import (
@@ -166,6 +167,39 @@ async def support(client, CallbackQuery, _):
                         text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
                     )
                 ],
+            ]
+        ),
+    )
+
+@app.on_callback_query(filters.regex("emmaopback") & ~BANNED_USERS)
+@languageCB
+async def support(client, CallbackQuery, _):
+    await message.reply_photo(
+                random.choice(EMMA_PICS),
+        caption=
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="sᴜᴘᴘᴏʀᴛ", callback_data=f"lood"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴇᴍᴍᴀ ʟᴏᴠᴇ", callback_data=f"madmax_op"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ʙᴀᴄᴋ", callback_data=f"settingsback_helper"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʟᴏsᴇ", callback_data=f"close"
+                    ),
+                ]
             ]
         ),
     )
