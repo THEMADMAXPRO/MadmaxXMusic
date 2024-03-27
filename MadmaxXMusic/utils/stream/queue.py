@@ -12,7 +12,7 @@ async def put_queue(
     file,
     title,
     duration,
-    message.from_user.mention,
+    user,
     vidid,
     user_id,
     stream,
