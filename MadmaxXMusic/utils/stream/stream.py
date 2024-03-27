@@ -232,7 +232,7 @@ async def stream(
                 file_path,
                 title,
                 duration_min,
-                message.from_user.mention,
+                user_name,
                 streamtype,
                 user_id,
                 "audio",
@@ -243,7 +243,7 @@ async def stream(
                 original_chat_id,
                 photo=config.SOUNCLOUD_IMG_URL,
                 caption=_["stream_1"].format(
-                    config.SUPPORT_CHAT, title[:23], duration_min, message.from_user.mention
+                    config.SUPPORT_CHAT, title[:23], duration_min, user_name
                 ),
                 reply_markup=InlineKeyboardMarkup(button),
             )
@@ -262,7 +262,7 @@ async def stream(
                 file_path,
                 title,
                 duration_min,
-                message.from_user.mention,
+                user_name,
                 streamtype,
                 user_id,
                 "video" if video else "audio",
@@ -271,7 +271,7 @@ async def stream(
             button = aq_markup(_, chat_id)
             await app.send_message(
                 chat_id=original_chat_id,
-                text=_["queue_4"].format(position, title[:27], duration_min, message.from_user.mention),
+                text=_["queue_4"].format(position, title[:27], duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
         else:
@@ -284,7 +284,7 @@ async def stream(
                 file_path,
                 title,
                 duration_min,
-                message.from_user.mention,
+                user_name,
                 streamtype,
                 user_id,
                 "video" if video else "audio",
@@ -296,7 +296,7 @@ async def stream(
             run = await app.send_photo(
                 original_chat_id,
                 photo=config.TELEGRAM_VIDEO_URL if video else config.TELEGRAM_AUDIO_URL,
-                caption=_["stream_1"].format(link, title[:23], duration_min, message.from_user.mention),
+                caption=_["stream_1"].format(link, title[:23], duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
             db[chat_id][0]["mystic"] = run
@@ -315,7 +315,7 @@ async def stream(
                 f"live_{vidid}",
                 title,
                 duration_min,
-                message.from_user.mention,
+                user_name,
                 vidid,
                 user_id,
                 "video" if video else "audio",
@@ -324,7 +324,7 @@ async def stream(
             button = aq_markup(_, chat_id)
             await app.send_message(
                 chat_id=original_chat_id,
-                text=_["queue_4"].format(position, title[:27], duration_min, message.from_user.mention),
+                text=_["queue_4"].format(position, title[:27], duration_min, user_name),
                 reply_markup=InlineKeyboardMarkup(button),
             )
         else:
