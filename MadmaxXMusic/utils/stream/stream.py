@@ -22,7 +22,7 @@ async def stream(
     user_id,
     result,
     chat_id,
-    message.from_user.mention,
+    user_name,
     original_chat_id,
     video: Union[bool, str] = None,
     streamtype: Union[bool, str] = None,
