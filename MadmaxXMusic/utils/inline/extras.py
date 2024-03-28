@@ -44,7 +44,8 @@ def add_markup(_):
     upl = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="ᴧᴅᴅ ᴛʜɪs ʙσᴛ ɪɴ ʏσᴜʀ ɢʀσᴜᴘ", url="https://t.me/emma_musicop_bot?startgroup=true"),
+                InlineKeyboardButton(
+                    text=_["S_B_1"], url=f"https://t.me/{app.username}?startgroup=true"),
            ],
         ]
     )
