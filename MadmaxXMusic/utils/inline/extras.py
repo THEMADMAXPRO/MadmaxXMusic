@@ -8,7 +8,6 @@ def botplaylist_markup(_):
         [
             InlineKeyboardButton(text=_["S_B_9"], url=SUPPORT_CHAT),
             InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close"),
-            InlineKeyboardButton(text="ᴧᴅᴅ ᴛʜɪs ʙσᴛ ɪɴ ʏσᴜʀ ɢʀσᴜᴘ", url="https://t.me/emma_musicop_bot?startgroup=true"),
         ],
     ]
     return buttons
