@@ -24,5 +24,29 @@ async def ping_com(client, message: Message, _):
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
         _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK, pytgping),
-        reply_markup=supp_markup(_),
+        reply_markup=InlineKeyboardMarkup(
+            [
+               [ 
+                   InlineKeyboardButton(
+                       text= "ᴀᴅᴅ ˹ᴇᴍᴍᴀ ✘ ᴍᴜsɪᴄ˼ ♪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/emma_musicop_bot?startgroup=true"
+                   )
+               ]
+                [
+                    InlineKeyboardButton(
+                        text="sᴜᴩᴩᴏʀᴛ", url="https://t.me/voiceofheart0"
+                    ),
+                    InlineKeyboardButton(
+                        text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ", url="https://github.com/THEMADMAXPRO/MadmaxXMusic"
+                    ),
+                ],
+                [
+                    InlineKeyboardButton(
+                        text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/STATUSDAIRY2"
+                    ),
+                    InlineKeyboardButton(
+                        text="ᴄʟᴏsᴇ", callback_data=f"close"
+                    ),
+                ]
+            ]
+        ),
     )
