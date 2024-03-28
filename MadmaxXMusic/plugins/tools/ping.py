@@ -30,7 +30,7 @@ async def ping_com(client, message: Message, _):
                    InlineKeyboardButton(
                        text= "ᴀᴅᴅ ˹ᴇᴍᴍᴀ ✘ ᴍᴜsɪᴄ˼ ♪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url="https://t.me/emma_musicop_bot?startgroup=true"
                    )
-               ]
+               ],
                 [
                     InlineKeyboardButton(
                         text="sᴜᴩᴩᴏʀᴛ", url="https://t.me/voiceofheart0"
@@ -46,7 +46,7 @@ async def ping_com(client, message: Message, _):
                     InlineKeyboardButton(
                         text="ᴄʟᴏsᴇ", callback_data=f"close"
                     ),
-                ]
+                ],
             ]
         ),
     )
