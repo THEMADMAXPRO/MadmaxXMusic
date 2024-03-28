@@ -7,7 +7,7 @@ from MadmaxXMusic import app
 from MadmaxXMusic.core.call import Madmax
 from MadmaxXMusic.utils import bot_sys_stats
 from MadmaxXMusic.utils.decorators.language import language
-from MadmaxXMusic.utils.inline import supp_markup
+from MadmaxXMusic.utils.inline import add_markup
 from config import BANNED_USERS, PING_IMG_URL
 
 
@@ -24,5 +24,5 @@ async def ping_com(client, message: Message, _):
     resp = (datetime.now() - start).microseconds / 1000
     await response.edit_text(
         _["ping_2"].format(resp, app.mention, UP, RAM, CPU, DISK, pytgping),
-        reply_markup=supp_markup(_),
+        reply_markup=add_markup(_),
     )
